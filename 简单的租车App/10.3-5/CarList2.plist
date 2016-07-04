@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>name</key>
+		<string>马自达</string>
+		<key>pic</key>
+		<string>31.jpg</string>
+		<key>distance</key>
+		<string>0.3公里</string>
+		<key>position</key>
+		<string>故宫博物馆</string>
+		<key>price</key>
+		<string>160元/天</string>
+		<key>lat</key>
+		<real>38.91769</real>
+		<key>lon</key>
+		<real>118.39816</real>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>马自达</string>
+		<key>pic</key>
+		<string>31.jpg</string>
+		<key>distance</key>
+		<string>0.3公里</string>
+		<key>position</key>
+		<string>故宫博物馆</string>
+		<key>price</key>
+		<string>160元/天</string>
+		<key>lat</key>
+		<real>38.92649</real>
+		<key>lon</key>
+		<real>118.37916</real>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>马自达</string>
+		<key>pic</key>
+		<string>31.jpg</string>
+		<key>distance</key>
+		<string>0.3公里</string>
+		<key>position</key>
+		<string>故宫博物馆</string>
+		<key>price</key>
+		<string>160元/天</string>
+		<key>lat</key>
+		<real>38.91269</real>
+		<key>lon</key>
+		<real>118.36736</real>
+	</dict>
+</array>
+</plist>
