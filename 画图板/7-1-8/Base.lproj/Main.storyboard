@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Vt-48-uXj" userLabel="My View">
+                                <rect key="frame" x="0.0" y="20" width="600" height="530"/>
+                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Pjo-Eh-G5R">
+                                <rect key="frame" x="8" y="560" width="504" height="31"/>
+                                <connections>
+                                    <action selector="changeWI:" destination="BYZ-38-t0r" eventType="valueChanged" id="GvA-OY-g5q"/>
+                                    <action selector="changeWidth:" destination="BYZ-38-t0r" eventType="valueChanged" id="dgO-tn-oNg"/>
+                                </connections>
+                            </slider>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pZf-Fk-vLU">
+                                <rect key="frame" x="520" y="560" width="30" height="30"/>
+                                <state key="normal" title="保存"/>
+                                <connections>
+                                    <action selector="save:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9ZJ-xU-vQC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OKu-RK-Prt">
+                                <rect key="frame" x="560" y="560" width="30" height="30"/>
+                                <state key="normal" title="清除"/>
+                                <connections>
+                                    <action selector="clean:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jNK-0f-MVv"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="pZf-Fk-vLU" firstAttribute="leading" secondItem="Pjo-Eh-G5R" secondAttribute="trailing" constant="10" id="8zk-sQ-cGb"/>
+                            <constraint firstAttribute="trailing" secondItem="8Vt-48-uXj" secondAttribute="trailing" id="9Gk-nf-IaW"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Pjo-Eh-G5R" secondAttribute="bottom" constant="10" id="9UK-6I-Hep"/>
+                            <constraint firstItem="Pjo-Eh-G5R" firstAttribute="top" secondItem="8Vt-48-uXj" secondAttribute="bottom" constant="10" id="IZH-YC-orV"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="pZf-Fk-vLU" secondAttribute="bottom" constant="10" id="PFY-Kv-4cs"/>
+                            <constraint firstItem="OKu-RK-Prt" firstAttribute="leading" secondItem="pZf-Fk-vLU" secondAttribute="trailing" constant="10" id="Sdx-H6-fc9"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="8Vt-48-uXj" secondAttribute="bottom" constant="50" id="VLW-vd-7vr"/>
+                            <constraint firstItem="8Vt-48-uXj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="fhW-mw-jaf"/>
+                            <constraint firstAttribute="trailing" secondItem="OKu-RK-Prt" secondAttribute="trailing" constant="10" id="l7E-mT-tCZ"/>
+                            <constraint firstItem="pZf-Fk-vLU" firstAttribute="top" secondItem="8Vt-48-uXj" secondAttribute="bottom" constant="10" id="nld-w3-nYn"/>
+                            <constraint firstItem="Pjo-Eh-G5R" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="nz5-xc-vAz"/>
+                            <constraint firstItem="OKu-RK-Prt" firstAttribute="top" secondItem="8Vt-48-uXj" secondAttribute="bottom" constant="10" id="pJL-0B-LqL"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="OKu-RK-Prt" secondAttribute="bottom" constant="10" id="t1q-0r-Smx"/>
+                            <constraint firstItem="8Vt-48-uXj" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="tgs-5u-DYA"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
